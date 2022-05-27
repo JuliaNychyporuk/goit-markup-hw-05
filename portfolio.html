@@ -8,48 +8,53 @@
     <link rel="stylesheet"  href="./css/styles.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+
 </head>
 
 <body class="body">
+
 <!-- Header -->
-<header>
-    <nav>
+<header class="header">
+    <div class="container header">
+    <nav class="header-navigation">
     <a class="logo" href=""><span class="logo-text">Web</span>Studio</a>
     <ul class="site-nav">
-        <li>
+        <li class="header-content">
             <a href="./index.html">Студия</a>
         </li>
-         <li>
+         <li class="header-content">
             <a href="./portfolio.html">Портфолио</a>
         </li>
-         <li>
+         <li class="header-content">
             <a href="">Контакты</a>
         </li>
     </ul>
     </nav>
 
     <ul class="links">
-    <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-   <li><a href="tel:380961111111">+38 096 111 11 11</a></li>
+    <li class="links-item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+   <li class="links-item"><a href="tel:380961111111">+38 096 111 11 11</a></li>
 </ul>
+</div>
 </header>
 
 <main>
     <!-- main section -->
     <section>
+     <div class="item">
 <h1 hidden>main section</h1>
 
 <ul class="filter">
-    <li> <button class="btn-filter" type="button">Все</button></li>
-    <li><button class="btn-filter" type="button">Веб-сайты</button></li>
-    <li><button class="btn-filter" type="button">Приложения</button></li>
-    <li><button class="btn-filter" type="button">Дизайн</button></li>
-    <li><button class="btn-filter" type="button">Маркетинг</button></li>
+    <li class="button-item"> <button class="btn-filter" type="button">Все</button></li>
+    <li class="button-item"><button class="btn-filter" type="button">Веб-сайты</button></li>
+    <li class="button-item"><button class="btn-filter" type="button">Приложения</button></li>
+    <li class="button-item"><button class="btn-filter" type="button">Дизайн</button></li>
+    <li class="button-item"><button class="btn-filter" type="button">Маркетинг</button></li>
 </ul>
 
-<ul>
-<li>
+<ul class="gallery-portfolio">
+<li class="gallery-item">
     <img src="./img/img (1)-min.jpg" alt="наши проекты"
     width="370"
     height="294">
@@ -57,7 +62,7 @@
     <p class="main-text">Веб-сайт</p>
 </li>
 
-<li>
+<li class="gallery-item">
     <img src="./img/img (2)-min.jpg" alt="наши проекты"
     width="370"
     height="294">
@@ -65,7 +70,7 @@
     <p class="main-text">Дизайн</p>
 </li>
 
-<li>
+<li class="gallery-item">
     <img src="./img/img (3)-min.jpg" alt="наши проекты"
     width="370"
     height="294">
@@ -73,7 +78,7 @@
     <p class="main-text">Приложение</p>
 </li>
 
-<li>
+<li class="gallery-item">
     <img src="./img/img (4)-min.jpg" alt="наши проекты"
     width="370"
     height="294">
@@ -81,7 +86,7 @@
     <p class="main-text">Маркетинг</p>
 </li>
 
-<li>
+<li class="gallery-item">
     <img src="./img/img (5)-min.jpg" alt="наши проекты"
     width="370"
     height="294">
@@ -89,7 +94,7 @@
     <p class="main-text">Приложение</p>
 </li>
 
-<li>
+<li class="gallery-item">
     <img src="/img/img (6)-min.jpg" alt="наши проекты"
    width="370"
     height="294">
@@ -97,7 +102,7 @@
     <p class="main-text">Веб-сайт</p>
 </li>
 
-<li>
+<li class="gallery-item">
     <img src="./img/img (9) (1).jpg" alt="наши проекты"
     width="370"
     height="294">
@@ -105,7 +110,7 @@
     <p class="main-text">Дизайн</p>
 </li>
 
-<li>
+<li class="gallery-item">
     <img src="./img/img (7)-min.jpg" alt="наши проекты"
     width="370"
     height="294">
@@ -113,7 +118,7 @@
     <p class="main-text">Маркетинг</p>
 </li>
 
-<li>
+<li class="gallery-item">
     <img src="./img/img (8)-min.jpg" alt="наши проекты"
     width="370"
     height="294">
@@ -121,10 +126,12 @@
     <p class="main-text">Приложение</p>
 </li>
 </ul>
+</div>
  </section>
 </main>
 
 <footer class="footer">
+    <div class="container">
     <!-- Footer -->
     <a class="logo-footer" href="">Web<span class="logo-text-footer">Studio</span></a>
     <address class="footer-adress">
@@ -135,6 +142,7 @@
 <li><a class="adress-contacts link" href="tel:+380961111111">+38 096 111 11 11</a></li>
 </ul>
 </address>
+</div>
 </footer>
     
 </body>

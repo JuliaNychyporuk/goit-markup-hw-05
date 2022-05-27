@@ -10,10 +10,24 @@
     --third-background-color:#F5F4FA;
 }
 body {
+margin: 0;
 background-color: var(--white);
 color: var(--primery-text-color);
 font-family: 'Roboto',
 sans-serif;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
+
+ol, ul {
+    margin: 0px;
+    padding-left: 0px;
+}
+
+button {
+    cursor: pointer;
 }
 
 ul {
@@ -26,6 +40,42 @@ list-style: none;
 
 /* --------header------- */
 
+.header {
+display: flex;
+align-items: center;
+}
+
+.header-navigation,
+.links {
+    display: flex;
+}
+
+.header {
+    color: var(--white);
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-navigation {
+align-items: center;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.site-nav, 
+.links {
+    display: flex;
+}
+
+.links{
+    margin-left: auto;
+}
+
 .logo {
     font-family: 'Raleway',sans-serif;
     font-weight: 700;
@@ -36,45 +86,82 @@ list-style: none;
     text-decoration: none;
 }
 
+.logo, .logo-footer {
+padding-right: 94px;
+display: block;
+padding-top: 25px;
+padding-bottom: 25px;
+}
+
 .logo-text {
     color: var(--accent);
 }
 
-.site-nav:link,.site-nav:visited{ 
+.site-nav :link, .site-nav :visited{ 
     font-weight: 500; 
     font-size: 14px; 
     line-height: 1,14;
     text-decoration: none;
-    color: rgba(33, 33, 33, 1)
+    color: rgba(33, 33, 33, 1);
 }
 
-.site-nav:hover,.site-nav:focus{
+.site-nav :hover, .site-nav :focus{
  color: var(--accent);
 }
 
-.links:link {
+.header-content:not(:last-child) {
+    margin-right: 50px;
+}
+
+.links-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.links-item,
+.header-item {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.links :link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1,14;
     color: rgba(117, 117, 117, 1);
     text-decoration: none;
 }
-.links:hover,.links:focus {
+.links :hover,.links :focus {
     color: var(--accent);
 }
 
 /* ------section-1--------- */
 
 .section-1 {
-font-weight: 900; 
-font-size: 44px; 
-line-height: 1,4;
+ font-weight: 900;
+font-size: 44px;
 background-color: var(--second-background-color);
 color: var(--white);
 text-align: center;
+
+padding-top: 200px;
+padding-bottom: 280px;
+}
+
+.title-s1 {
+line-height: 1,4;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+
+margin-top: 0px;
+margin-bottom: 30px;
 }
 
 .button {
+    padding: 10px 32px;
+    text-align: center;
+    border-radius: 4px;
+    border: transparent;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1,87;
@@ -89,10 +176,21 @@ text-align: center;
 /* -------Section 2--------- */
 
 .section-2 {
-    background-color:var(--primery-background-color);
+    background-color:var(--white);
 }
 
+.section-2-list {
+display: flex;
+}
+
+.list-text:not(:last-child) {
+    margin-right: 30px;
+    }
+
 .list-text {
+padding-right: 30px;
+flex-direction: row-reverse;
+
 font-weight: 400;
 font-size: 14px;
 line-height: 1,7;
@@ -101,18 +199,38 @@ color: var(--text-color)
 }
 
 .list-title {
+
+    margin-top: 94px;
+    padding-bottom: 10px;
+    display: block;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1,4;
     letter-spacing: 0.03em;
     color: var(--primery-text-color)
 }
+
 .section-2-title {
+    margin-top: 94px;
+    text-align: center;
+    padding-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1,16;
     letter-spacing: 0.03em;
     color: var(--primery-text-color)
+}
+
+.section2-gallery {
+    display: flex;
+    justify-content:center;
+}
+
+.section2-item:not(:last-child) {
+margin-right: 30px;
+margin-bottom: 94px;
 }
 
 /*-------- Section-3------- */
@@ -121,15 +239,30 @@ color: var(--text-color)
 }
 
 .section-3-main-title {
+padding-top: 94px;
+padding-bottom: 50px;
+text-align: center;
+
 font-weight: 700;
 font-size: 36px;
-line-height: 1,
-16;
+line-height: 1,16;
 letter-spacing: 0.03em;
 color: var(--primery-text-color)
 }
 
+.section3-list {
+    display: flex;
+    justify-content: center;
+}
+
+.section3-item:not(:last-child) {
+    margin-right: 30px;
+}
+
 .section-3-title {
+padding-top: 30px;
+padding-bottom: 10px;
+
 font-weight: 500;
 font-size: 16px;
 line-height: 1,18;
@@ -138,6 +271,8 @@ color: var(--primery-text-color)
 }
 
 .section-3-text {
+    margin-bottom: 124px;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1,18px;
@@ -148,11 +283,12 @@ color: var(--primery-text-color)
 /*------- Footer------- */
 .footer {
     background-color: var(--second-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo-footer{
-    font-family: 'Raleway',
-    sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -160,10 +296,12 @@ color: var(--primery-text-color)
     color: var(--accent);
     text-decoration: none;
 }
+
 .logo-text-footer {
     color: #FFFFFF;
 }
-.adress-street, .adress-contacts {
+.adress-street, .adress-mail,
+.adress-tel {
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
@@ -172,14 +310,23 @@ letter-spacing: 0.03em;
 color: var(--white)
 }
 
-.adress-contacts {
+.adress-street,
+.adress-mail,
+.adress-tel {
+    display: block;
+    padding-bottom: 9px;
+}
+
+.adress-mail, .adress-tel {
 color: rgba(255, 255, 255, 0.6);
 }
 
-.adress-contacts:hover,.adress-contacts:focus {
+.adress-mail:hover,
+.adress-mail:focus,
+.adress-tel:hover,
+.adress-tel:focus {
 color: rgba(33, 150, 243, 1);
 }
-
 
 /*-------- Portfolio------- */
 
@@ -194,13 +341,52 @@ color: rgba(33, 150, 243, 1);
 .btn-filter {
     cursor: pointer;
 }
+.filter {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 94px;
+}
+
+.button-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.btn-filter {
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+
+    margin-bottom: 50px;
+
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+
 
 .btn-filter:hover,.btn-filter:focus{
 background-color: var(--accent);
 color: var(--white);
 }
 
+.gallery-portfolio {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.gallery-item {
+    padding-bottom: 20px;
+}
+
+.gallery-item:not(:last-child) {
+    margin-right: 30px;
+ }
+
 .main-title {
+    padding-bottom: 4px;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -208,10 +394,13 @@ color: var(--white);
     color: var(--primery-text-color)
 }
 .main-text {
+ margin-bottom: 50px;
+
 font-weight: 400;
 font-size: 16px;
 line-height: 1,87;
 letter-spacing: 0.03em;
 color: var(--text-color)
 }
+
 
