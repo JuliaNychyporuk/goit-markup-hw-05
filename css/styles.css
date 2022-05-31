@@ -100,7 +100,7 @@ padding-bottom: 25px;
 .site-nav :link, .site-nav :visited{ 
     font-weight: 500; 
     font-size: 14px; 
-    line-height: 1,14;
+    line-height: 1.14;
     text-decoration: none;
     color: rgba(33, 33, 33, 1);
 }
@@ -117,7 +117,6 @@ padding-bottom: 25px;
     margin-right: 50px;
 }
 
-.links-item,
 .header-item {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -126,9 +125,12 @@ padding-bottom: 25px;
 .links :link {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1,14;
+    line-height: 1.14;
     color: rgba(117, 117, 117, 1);
     text-decoration: none;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .links :hover,.links :focus {
     color: var(--accent);
@@ -137,20 +139,20 @@ padding-bottom: 25px;
 /* ------section-1--------- */
 
 .section-1 {
- font-weight: 900;
-font-size: 44px;
 background-color: var(--second-background-color);
-color: var(--white);
 text-align: center;
-
 padding-top: 200px;
-padding-bottom: 280px;
+padding-bottom: 200px;
 }
 
 .title-s1 {
+font-weight: 900;
+font-size: 44px;
 line-height: 1,4;
 letter-spacing: 0.06em;
 text-transform: uppercase;
+
+color: var(--white);
 
 margin-top: 0px;
 margin-bottom: 30px;
@@ -177,10 +179,13 @@ margin-bottom: 30px;
 
 .section-2 {
     background-color:var(--white);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .section-2-list {
-display: flex;
+
+margin-right: 30px;
 }
 
 .list-text:not(:last-child) {
@@ -188,64 +193,66 @@ display: flex;
     }
 
 .list-text {
-padding-right: 30px;
-flex-direction: row-reverse;
 
 font-weight: 400;
 font-size: 14px;
-line-height: 1,7;
+line-height: 1.7;
 letter-spacing: 0.03em;
 color: var(--text-color)
 }
 
 .list-title {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+letter-spacing: 0.03em;
+color: var(--primery-text-color);
 
-    margin-top: 94px;
-    padding-bottom: 10px;
-    display: block;
+margin-top: 0;
+margin-bottom: 10px;
+}
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1,4;
-    letter-spacing: 0.03em;
-    color: var(--primery-text-color)
+.img {
+    display:block;
+    width:100%;
+    height:auto;
 }
 
 .section-2-title {
-    margin-top: 94px;
     text-align: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 
     font-weight: 700;
     font-size: 36px;
-    line-height: 1,16;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--primery-text-color)
 }
 
 .section2-gallery {
     display: flex;
-    justify-content:center;
+    margin-bottom: 94px;
 }
 
 .section2-item:not(:last-child) {
 margin-right: 30px;
-margin-bottom: 94px;
 }
 
 /*-------- Section-3------- */
 .section-3 {
     background-color: var(--third-background-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .section-3-main-title {
-padding-top: 94px;
-padding-bottom: 50px;
+margin-bottom: 50px;
 text-align: center;
 
 font-weight: 700;
 font-size: 36px;
-line-height: 1,16;
+line-height: 1.16;
 letter-spacing: 0.03em;
 color: var(--primery-text-color)
 }
@@ -255,27 +262,40 @@ color: var(--primery-text-color)
     justify-content: center;
 }
 
+.section3-tt {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section3-item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    width: calc(100%-90px)/4;
+}
+
 .section3-item:not(:last-child) {
     margin-right: 30px;
+
 }
 
 .section-3-title {
-padding-top: 30px;
 padding-bottom: 10px;
+text-align: center;
 
 font-weight: 500;
 font-size: 16px;
-line-height: 1,18;
+line-height: 1.18;
 letter-spacing: 0.03em;
 color: var(--primery-text-color)
 }
 
 .section-3-text {
-    margin-bottom: 124px;
-
+    text-align: center;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1,18px;
+    line-height: 1.18px;
     letter-spacing: 0.03em;
     color: var(--text-color)
 }
@@ -300,12 +320,17 @@ color: var(--primery-text-color)
 .logo-text-footer {
     color: #FFFFFF;
 }
+
+.adress-footer:not(:last-child){
+margin-bottom: 9px;
+}
+
 .adress-street, .adress-mail,
 .adress-tel {
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
-line-height: 1,71;
+line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--white)
 }
@@ -314,7 +339,6 @@ color: var(--white)
 .adress-mail,
 .adress-tel {
     display: block;
-    padding-bottom: 9px;
 }
 
 .adress-mail, .adress-tel {
@@ -330,10 +354,15 @@ color: rgba(33, 150, 243, 1);
 
 /*-------- Portfolio------- */
 
+.section-portfolio {
+    padding-top: 0px;
+    padding-bottom: 94px;
+}
+
 .btn-filter {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1,62;
+    line-height: 1.62;
     letter-spacing: 0.03em;
     color: var(--primery-text-color)
 }
@@ -352,18 +381,21 @@ color: rgba(33, 150, 243, 1);
     margin-right: 8px;
 }
 
+.section3-list {
+    margin-bottom: 50px;
+}
+
 .btn-filter {
     padding-top: 6px;
     padding-right: 22px;
     padding-bottom: 6px;
     padding-left: 22px;
 
-    margin-bottom: 50px;
-
     border-radius: 4px;
     border: 1px solid transparent;
-}
 
+    margin-bottom: 50px;
+}
 
 .btn-filter:hover,.btn-filter:focus{
 background-color: var(--accent);
@@ -376,16 +408,24 @@ flex-wrap: wrap;
 justify-content: center;
 }
 
+.gallery-items {
+    margin-bottom: 0px;
+}
 .gallery-item {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
-.gallery-item:not(:last-child) {
+.gallery-item, .gallery-items{
     margin-right: 30px;
  }
 
+ .main-tt {
+     padding-top: 20px;
+     padding-bottom: 20px;
+ }
+
 .main-title {
-    padding-bottom: 4px;
+    margin-bottom: 4px;
 
     font-weight: 700;
     font-size: 18px;
@@ -394,11 +434,10 @@ justify-content: center;
     color: var(--primery-text-color)
 }
 .main-text {
- margin-bottom: 50px;
 
 font-weight: 400;
 font-size: 16px;
-line-height: 1,87;
+line-height: 1.87;
 letter-spacing: 0.03em;
 color: var(--text-color)
 }
