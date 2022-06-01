@@ -50,6 +50,14 @@ align-items: center;
     display: flex;
 }
 
+.header>.container {
+    display: flex;
+}
+
+.links-item {
+    display: flex;
+}
+
 .header {
     color: var(--white);
     border-bottom: 1px solid #ECECEC;
@@ -57,6 +65,7 @@ align-items: center;
 
 .header-navigation {
 align-items: center;
+
 }
 
 .header-item {
@@ -118,6 +127,7 @@ padding-bottom: 25px;
 
 .header-content:not(:last-child) {
     margin-right: 50px;
+
 }
 
 .links-item:not(:last-child) {
