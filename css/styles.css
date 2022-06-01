@@ -81,7 +81,7 @@ display: flex;
 }
 
 
-.links{
+.links {
     margin-left: auto;
     font-weight: 500;
     font-size: 14px;
@@ -89,6 +89,7 @@ display: flex;
     text-decoration: none;
     color: rgba(33, 33, 33, 1);
 }
+
 
 .logo {
     font-family: 'Raleway',sans-serif;
