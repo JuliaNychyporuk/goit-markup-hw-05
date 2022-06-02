@@ -169,6 +169,9 @@ line-height: 1.36;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 
+width: 696px;
+margin-right: auto;
+margin-left: auto;
 
 color: var(--white);
 
@@ -199,7 +202,7 @@ margin-bottom: 30px;
     background-color:var(--white);
     padding-top: 94px;
     padding-bottom: 94px;
-;
+
 }
 
 .section-2-list {
@@ -332,7 +335,6 @@ color: var(--primery-text-color)
 /*------- Footer------- */
 .footer {
     background-color: var(--second-background-color);
-    padding: 60px 60px;
 
 }
 
@@ -441,7 +443,6 @@ justify-content: center;
 
 .gallery-item {
     margin-bottom: 30px;
-    border-bottom: 1px solid #EEEEEE;
 }
 
 .gallery-item:nth-child(3n) {
@@ -461,6 +462,9 @@ justify-content: center;
      padding-bottom: 20px;
      padding-left: 24px;
      padding-right: 24px;
+     border-bottom: 1px solid #EEEEEE;
+     border-right: 1px solid #EEEEEE;
+     border-left:1px solid #EEEEEE;
  }
 
 .main-title {
