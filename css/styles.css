@@ -135,6 +135,7 @@ padding-bottom: 25px;
 }
 
 .header-item {
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -202,7 +203,6 @@ margin-bottom: 30px;
     background-color:var(--white);
     padding-top: 94px;
     padding-bottom: 94px;
-
 }
 
 .section-2-list {
@@ -278,7 +278,6 @@ margin-right: 30px;
 }
 
 .section-3-main-title {
-margin-bottom: 50px;
 text-align: center;
 
 font-weight: 700;
@@ -339,6 +338,7 @@ color: var(--primery-text-color)
 }
 
 .logo-footer{
+    display: block;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
