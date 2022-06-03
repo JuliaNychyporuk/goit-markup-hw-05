@@ -121,7 +121,7 @@ padding-bottom: 25px;
     color: var(--accent);
 }
 
-.site-nav :hover, .site-nav :focus{
+.site-nav :hover, .site-nav :focus {
  color: var(--accent);
 }
 
@@ -138,6 +138,10 @@ padding-bottom: 25px;
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+}
+
+.header-item.current {
+    color:var(--accent)
 }
 
 .links :link {
