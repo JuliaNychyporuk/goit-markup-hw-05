@@ -127,7 +127,6 @@ padding-bottom: 25px;
 
 .header-content:not(:last-child) {
     margin-right: 50px;
-
 }
 
 .links-item:not(:last-child) {
@@ -144,6 +143,12 @@ padding-bottom: 25px;
     color:var(--accent)
 }
 
+.links-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .links :link {
     font-weight: 500;
     font-size: 14px;
@@ -154,6 +159,12 @@ padding-bottom: 25px;
     padding-top: 32px;
     padding-bottom: 32px;
 }
+
+.link-soc-icon {
+    margin-right: 10px;
+    fill: white
+}
+
 .links :hover,.links :focus {
     color: var(--accent);
 }
@@ -162,6 +173,12 @@ padding-bottom: 25px;
 
 .section-1 {
 background-color: var(--second-background-color);
+background-image: linear-gradient(
+rgba(47, 48, 58, 0.4),
+rgba(47, 48, 58, 0.4)
+),
+url(../images/Img\ hero\ jpg.jpg);
+
 text-align: center;
 padding-top: 200px;
 padding-bottom: 200px;
@@ -221,6 +238,36 @@ display: flex;
 .list-s2:not(:last-child) {
     margin-right: 30px;
     }
+
+.benefits-list {
+    display: flex;
+    margin-right: 30px;
+}
+
+.benefits-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.benefits-item {
+    background-color: #F5F4FA;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    display: block;
+
+    border-radius: 4px;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.benefits-icon {
+width: 100%;
+height: 100%;
+align-items: center;
+justify-content: center;
+}
+
 
 .list-text {
 
@@ -313,7 +360,6 @@ color: var(--primery-text-color)
 
 .section3-item:not(:last-child) {
     margin-right: 30px;
-
 }
 
 .section-3-title {
@@ -333,7 +379,98 @@ color: var(--primery-text-color)
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
-    color: var(--text-color)
+    color: var(--text-color);
+
+    margin-bottom: 16px;
+}
+.team-list {
+    display: flex;
+    justify-content: center;
+}
+
+.team-list-item {
+    height: 44px;
+    width: 44px;
+}
+
+.team-list-item:not(:last-child){
+    margin-right: 10px;
+}
+
+.team-links {
+    width: 100%;
+    height: 100%;
+    background-color: tomato;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #AFB1B8;
+    }
+
+    .team-links :hover,
+    .team-links :focus {
+    background-color: #2196F3
+    }
+    
+
+.team-links :hover .team-soc-icon,
+.team-links :focus .team-soc-icon {
+    fill: #FFFFFF;
+}
+
+
+/* < !--------------------- Section 4---------------------> */
+
+.section-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    text-align: center;
+}
+
+.clients-title {
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: #212121;
+
+    padding-bottom: 50px;
+}
+.section-clients-list {
+    display: flex;
+    margin-right: 30px;
+}
+
+.clients-links {
+    width: 170px;
+    height: 92px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-clients-item {
+    display: flex;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+    margin-right: 30px;
+}
+
+.clients-icon {
+    align-items: center;
+    justify-content: center;
+    fill: #AFB1B8;
+}
+
+.clients-links:hover .clients-icon,
+.clients-links:focus .clients-icon {
+    fill: var(--accent);
 }
 
 /*------- Footer------- */
