@@ -463,11 +463,12 @@ color: var(--primery-text-color)
     display: flex;
     justify-content: center;
     align-items: center;
+
+    border: 1px solid #AFB1B8;
 }
 
 .section-clients-item {
     margin-right: 30px;
-    border: 1px solid #AFB1B8;
 }
 
 .clients-icon {
@@ -555,7 +556,6 @@ color: rgba(33, 150, 243, 1);
 
 .links-footer {
     margin-left: 70px;
-    margin-right: auto;
 }
 
 .links-title-footer {
