@@ -157,6 +157,9 @@ ul {
     padding-top: 32px;
     padding-bottom: 32px;
     position: relative;
+
+    transition: color;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-item::after {
@@ -177,18 +180,12 @@ transform: scaleX(0);
 .header-item:hover::after{
     opacity: 1;
     transition: opacity;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: scaleX(1);
-
 }
 
 .links {
     display: flex;
     margin-left: auto;
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .links-item {
@@ -208,6 +205,10 @@ transform: scaleX(0);
     padding-bottom: 32px;
     display: flex;
     align-items: center;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .links-soc-icon {
@@ -544,7 +545,7 @@ position: relative;
 
     border: 1px solid #AFB1B8;
     
-    transition-property: fill;
+    transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -557,6 +558,10 @@ position: relative;
     align-items: center;
     justify-content: center;
     fill: #AFB1B8;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-links:hover .clients-icon,
@@ -675,7 +680,7 @@ position: relative;
     justify-content: center;
     align-items: center;
      
-    transition-property: color;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -702,7 +707,7 @@ position: relative;
     line-height: 1.62;
     letter-spacing: 0.03em;
     color: var(--primery-text-color);
-
+    transition-property: background-color, color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -793,6 +798,8 @@ position: relative;
     overflow: hidden;
 }
 
+
+
 .position-overlay {
 position: absolute;
 overflow: hidden;
@@ -806,6 +813,7 @@ line-height: 1.55;
 color: #FFFFFF;
 padding: 63px 24px;
 transform: translateY(101%);
+
 transition-property: transform;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -813,10 +821,16 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .overlay:hover .position-overlay,
 .overlay:focus .position-overlay {
-    transform: translateY(0); }
+    transform: translateY(0);
+}
+
     
 .gallery-link {
     display: block;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .gallery-link:hover,
@@ -867,6 +881,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
 }
 
 .modal {
